@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY . ./
 
-RUN CGO_ENABLED=0 GOOS=linux go build -v -ldflags "-X 'github.com/farovictor/MongoDbLoader/src/cmd.GitCommit=${GIT_COMMIT}' -X 'github.com/farovictor/MongoDbLoader/src/cmd.BuildTime=${BUILD_TIME}' -X 'github.com/farovictor/MongoDbLoader/src/cmd.Version=${VERSION}' -s -w" -o mongoload -a -installsuffix cgo ./loader/src && \
+RUN CGO_ENABLED=0 GOOS=linux go build -v -ldflags "-X 'github.com/farovictor/MongoDbLoader/src/cmd.GitCommit=${GIT_COMMIT}' -X 'github.com/farovictor/MongoDbLoader/src/cmd.BuildTime=${BUILD_TIME}' -X 'github.com/farovictor/MongoDbLoader/src/cmd.Version=${VERSION}' -s -w" -o mongoload -a -installsuffix cgo ./src && \
     chmod a+x mongoload
 
 FROM alpine:latest
