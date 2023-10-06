@@ -28,7 +28,7 @@ var rootCmd = &cobra.Command{
 	Short:   "This project aims to support mongodb loading pipelines",
 	Version: Version,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("For more info, visit: https://github.com/farovictor/MongoDbToolkit\n")
+		fmt.Printf("For more info, visit: https://github.com/farovictor/MongoDbLoader\n")
 		fmt.Printf("Git Commit: %s\n", GitCommit)
 		fmt.Printf("Built: %s\n", BuildTime)
 		fmt.Printf("Version: %s\n", Version)
