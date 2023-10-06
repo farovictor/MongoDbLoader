@@ -53,3 +53,18 @@ mongoloader load \
 	--collection "$MONGO_COLLECTION" \
 	--app-name "$APPNAME" \
 ```
+
+
+## Releases
+All releases are documented in [CHANGELOG](CHANGELOG.md), please check there for more details.
+
+
+### Docker
+All releases are containerized and available [here](https://hub.docker.com/r/victorfaro/mongoloader)
+To pull the latest version, execute the following command:
+
+```bash
+docker pull victorfaro/mongoloader:latest
+```
+
+All images uses the cli as entrypoint, check the above examples to see how to use it.
